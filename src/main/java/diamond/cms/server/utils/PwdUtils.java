@@ -6,7 +6,8 @@ import java.security.NoSuchAlgorithmException;
 public class PwdUtils {
 
 	public static String pwd(String pwd) {
-		return md5(md5(md5(pwd)+pwd)+pwd);
+		return pwd;
+		// return md5(md5(md5(pwd)+pwd)+pwd);
 	}
 	
 	public static String md5(String plainText) {
